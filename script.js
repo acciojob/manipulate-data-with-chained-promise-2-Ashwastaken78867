@@ -9,7 +9,7 @@ function getNumbers() {
 getNumbers()
 .then((numbers) =>{
 	return new Promise((resolve) =>{
-		const even = numbers.fliter((num) => num%2===0);
+		const even = numbers.filter((num) => num%2===0);
 		document.getElementById('output').textContent = "Even Numbers: + evens.join(', ');   "
 	setTimeout(() => resolve(even), 1000);
 	})
